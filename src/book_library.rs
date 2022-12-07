@@ -14,8 +14,8 @@ pub mod book_library {
         }
         pub fn display_books(&self) {
             println!("entered display_books");
+            let mut i = 0;
             for title in self.collection.iter() {
-                let mut i = 0;
                 println!("{} - {:?}", i, title.get_title());
                 i += 1;
             }

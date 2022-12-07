@@ -8,10 +8,14 @@ use input::input::Data;
 
 fn main() {
     println!("Welcome to library!");
+
+    let mut fiction = Books {
+        collection: Vec::new(),
+    };
     loop {
         println!(
             "
-    1. Add new book
+    1. Add new dummy book
     2. Display author name
     3. Display book publisher
     4. Display ISBN
@@ -21,9 +25,6 @@ fn main() {
     "
         );
 
-        let mut fiction = Books {
-            collection: Vec::new(),
-        };
         let choice = Data::new().my_scan::<i32>();
 
         match choice {
@@ -31,7 +32,6 @@ fn main() {
                 fiction.collection.push(Book::add_new_book());
             }
             2 => {
-                println!("{}", fiction.collection.len());
                 if fiction.is_empty() {
                     println!("No books added")
                 } else {
