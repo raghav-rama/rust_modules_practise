@@ -21,6 +21,7 @@ fn main() {
     4. Display ISBN
     5. Display Price
     6. Edit book
+    7. Exit
 
     "
         );
@@ -105,6 +106,9 @@ fn main() {
                         println!("Wrong choice")
                     }
                 }
+            }
+            7 => {
+                break;
             }
             _ => println!("Wrong choice"),
         }
