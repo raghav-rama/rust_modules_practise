@@ -13,7 +13,6 @@ pub mod book_library {
             self.collection.len() == 0
         }
         pub fn display_books(&self) {
-            println!("entered display_books");
             let mut i = 0;
             for title in self.collection.iter() {
                 println!("{} - {:?}", i, title.get_title());
