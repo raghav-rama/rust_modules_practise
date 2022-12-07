@@ -76,6 +76,10 @@ fn main() {
                 }
             }
             6 => {
+                if fiction.is_empty() {
+                    println!("No books added");
+                    continue;
+                }
                 println!("What do you wanna edit?");
                 println!(
                     "
