@@ -31,6 +31,7 @@ fn main() {
         match choice {
             1 => {
                 fiction.collection.push(Book::add_new_book());
+                println!("Added book with dummy values, edit using option 6");
             }
             2 => {
                 if fiction.is_empty() {
