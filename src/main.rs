@@ -79,11 +79,11 @@ fn main() {
                 println!("What do you wanna edit?");
                 println!(
                     "
-                1. title
-                2. author
-                3. publisher
-                4. isbn
-                5. price
+            1. title
+            2. author
+            3. publisher
+            4. isbn
+            5. price
                 "
                 );
                 let choice = Data::new().my_scan::<usize>();
